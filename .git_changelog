@@ -4,3 +4,4 @@ Inception Date: 2024-05-09
 Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 
 - [2024-05-09] chore: scaffold profiler architecture and configuration schema
+- [2024-05-14] feat: timer: implement high-precision monotonic clock recorder
