@@ -6,3 +6,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-05-09] chore: scaffold profiler architecture and configuration schema
 - [2024-05-14] feat: timer: implement high-precision monotonic clock recorder
 - [2024-05-20] feat: timer: add P50, P90, P95, and P99 quantile statistics
+- [2024-05-25] test: add unit tests for percentile calculation on skewed distributions
