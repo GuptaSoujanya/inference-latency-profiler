@@ -9,3 +9,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-05-22] test: add unit tests for percentile calculation on skewed distributions
 - [2024-05-27] feat: collector: implement RequestLatencyRecord and throughput estimator
 - [2024-05-31] feat: backends: add BaseBackend abstract interface
+- [2024-06-05] feat: backends: implement MockStreamingBackend with realistic jitter
