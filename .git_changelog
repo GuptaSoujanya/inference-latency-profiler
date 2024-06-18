@@ -12,3 +12,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-06-05] feat: backends: implement MockStreamingBackend with realistic jitter
 - [2024-06-09] test: verify streaming generator yields expected token chunks
 - [2024-06-14] feat: telemetry: implement process RSS memory tracker
+- [2024-06-18] feat: telemetry: add simulated GPU VRAM allocation telemetry
