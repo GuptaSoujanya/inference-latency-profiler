@@ -15,3 +15,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-06-28] feat: telemetry: add simulated GPU VRAM allocation telemetry
 - [2024-07-04] feat: viz: add terminal ASCII histogram visualizer for latency distributions
 - [2024-07-09] feat: cli: implement llm-profile command line runner
+- [2024-07-15] test: add end-to-end integration test for latency profiler engine
