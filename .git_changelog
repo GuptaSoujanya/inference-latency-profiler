@@ -18,3 +18,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-07-02] test: add end-to-end integration test for latency profiler engine
 - [2024-07-06] ci: configure GitHub Actions automated test workflow
 - [2024-07-11] docs: add sequence diagram decomposing TTFT and ITL windows in README
+- [2024-07-15] perf: optimize microsecond timer array allocation using pre-sized slots
