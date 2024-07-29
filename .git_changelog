@@ -21,3 +21,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-07-15] perf: optimize microsecond timer array allocation using pre-sized slots
 - [2024-07-20] feat: backends: add OpenAI-compatible streaming endpoint client
 - [2024-07-24] feat: backends: add Ollama /api/generate streaming adaptor
+- [2024-07-29] fix: handle connection timeout gracefully during streaming prefill
