@@ -22,3 +22,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-07-20] feat: backends: add OpenAI-compatible streaming endpoint client
 - [2024-07-24] feat: backends: add Ollama /api/generate streaming adaptor
 - [2024-07-29] fix: handle connection timeout gracefully during streaming prefill
+- [2024-08-02] test: mock streaming server responses for integration testing
