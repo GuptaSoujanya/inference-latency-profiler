@@ -26,3 +26,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-08-07] feat: viz: add latency CDF plot renderer in ASCII
 - [2024-08-11] perf: reduce timing overhead to under 200 nanoseconds per token probe
 - [2024-08-16] docs: add comparative benchmarks for NVIDIA H100 vs A100 vs RTX 4090
+- [2024-08-20] feat: cli: add concurrent client simulation with worker threads
