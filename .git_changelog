@@ -29,3 +29,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-08-20] feat: cli: add concurrent client simulation with worker threads
 - [2024-08-25] fix: prevent race condition in multi-threaded latency metric aggregation
 - [2024-08-29] test: add stress test verifying concurrency accuracy under load
+- [2024-09-03] feat: telemetry: add P99.9 ultra-tail latency quantile tracking
