@@ -31,3 +31,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-08-29] test: add stress test verifying concurrency accuracy under load
 - [2024-09-03] feat: telemetry: add P99.9 ultra-tail latency quantile tracking
 - [2024-09-07] docs: add Apple Silicon M3 Max llama.cpp metal latency figures
+- [2024-09-12] feat: reporters: add automated latency regression detection vs baseline
