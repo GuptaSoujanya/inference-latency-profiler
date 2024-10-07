@@ -30,3 +30,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-09-21] fix: prevent race condition in multi-threaded latency metric aggregation
 - [2024-09-26] test: add stress test verifying concurrency accuracy under load
 - [2024-10-02] feat: telemetry: add P99.9 ultra-tail latency quantile tracking
+- [2024-10-07] docs: add Apple Silicon M3 Max llama.cpp metal latency figures
