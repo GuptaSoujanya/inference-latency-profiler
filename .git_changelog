@@ -38,3 +38,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-09-30] perf: use zero-copy byte buffers for incoming token telemetry
 - [2024-10-04] docs: add whitepaper on chunked prefill impact on Time-To-First-Token
 - [2024-10-09] feat: cli: add --warmup-requests flag to eliminate cold start bias
+- [2024-10-13] fix: exclude warmup request timings from final quantile calculations
