@@ -34,3 +34,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-10-13] feat: reporters: add automated latency regression detection vs baseline
 - [2024-10-19] feat: backends: add llama.cpp HTTP server streaming client
 - [2024-10-24] feat: backends: add TensorRT-LLM gRPC streaming connector
+- [2024-10-30] test: verify gRPC streaming client correctly handles token end event
