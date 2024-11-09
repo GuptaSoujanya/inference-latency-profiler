@@ -44,3 +44,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-10-27] docs: update README with architecture diagram and live benchmark numbers
 - [2024-10-31] feat: telemetry: track KV cache memory footprint growth per token
 - [2024-11-05] test: verify KV cache allocation increases strictly monotonically with generation length
+- [2024-11-09] fix: guard against socket reset errors during server-side aborts
