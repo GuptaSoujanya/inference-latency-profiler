@@ -39,3 +39,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-11-10] docs: add whitepaper on chunked prefill impact on Time-To-First-Token
 - [2024-11-16] feat: cli: add --warmup-requests flag to eliminate cold start bias
 - [2024-11-21] fix: exclude warmup request timings from final quantile calculations
+- [2024-11-27] test: verify warmup filter eliminates outlier first-request latency
