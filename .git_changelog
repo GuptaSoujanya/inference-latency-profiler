@@ -49,3 +49,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-11-18] docs: add distributed tracing setup guide for LLM inference gateways
 - [2024-11-23] perf: minimize garbage collection pauses during timing capture windows
 - [2024-11-27] feat: cli: add --concurrency ramp-up test mode for saturation benchmarking
+- [2024-12-02] test: verify ramp-up mode correctly measures saturation inflection point
