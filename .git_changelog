@@ -42,3 +42,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-11-27] test: verify warmup filter eliminates outlier first-request latency
 - [2024-12-03] feat: reporters: add CSV export for longitudinal latency regressions
 - [2024-12-08] docs: update README with architecture diagram and live benchmark numbers
+- [2024-12-14] chore: bump version to v0.5.2 and stabilize telemetry schemas
