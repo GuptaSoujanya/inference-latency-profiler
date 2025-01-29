@@ -44,3 +44,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-12-08] docs: update README with architecture diagram and live benchmark numbers
 - [2024-12-14] chore: bump version to v0.5.2 and stabilize telemetry schemas
 - [2025-01-15] feat: implement CUDA event timer integration for zero-CPU-overhead GPU profiling
+- [2025-01-29] feat: measure exact kernel execution latency for flash-attention prefill
