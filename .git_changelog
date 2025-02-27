@@ -55,3 +55,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2024-12-15] chore: update pyproject.toml dependencies and lockfile
 - [2025-01-15] feat: implement CUDA event timer integration for zero-CPU-overhead GPU profiling
 - [2025-02-05] feat: measure exact kernel execution latency for flash-attention prefill
+- [2025-02-27] test: verify CUDA event timings match PyTorch profiler within 1% margin
