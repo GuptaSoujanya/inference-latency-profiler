@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inference-latency-profiler"
+version = "0.1.5"
+description = "Lightweight profiler for measuring token generation latency (TTFT, ITL) across LLM backends."
+readme = "README.md"
+authors = [{ name = "Soujanya Gupta", email = "soujanya.gupta@ethara.ai" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.0.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "ruff>=0.3.0", "mypy>=1.9.0"]
+
+[project.scripts]
+llm-profile = "profiler.cli:main"
