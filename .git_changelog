@@ -47,3 +47,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-01-29] feat: measure exact kernel execution latency for flash-attention prefill
 - [2025-02-12] test: verify CUDA event timings match PyTorch profiler within 1% margin
 - [2025-02-26] docs: document GPU kernel latency decomposition (Prefill vs Decode)
+- [2025-03-12] feat: add Apple Silicon Metal Performance Shaders (MPS) latency profiler
