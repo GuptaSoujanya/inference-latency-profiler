@@ -59,3 +59,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-03-20] docs: document GPU kernel latency decomposition (Prefill vs Decode)
 - [2025-04-11] feat: add Apple Silicon Metal Performance Shaders (MPS) latency profiler
 - [2025-05-03] test: verify MPS profiler correctly captures unified memory bandwidth
+- [2025-05-24] docs: add benchmark report: M3 Max unified memory vs NVIDIA H100 SXM5
