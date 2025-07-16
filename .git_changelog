@@ -56,3 +56,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-06-04] chore: bump release to v1.0.0 production milestone with hardware profilers
 - [2025-06-18] docs: publish comprehensive LLM latency optimization whitepaper in docs/
 - [2025-07-02] feat: telemetry: track KV cache memory footprint growth per token
+- [2025-07-16] test: verify KV cache allocation increases strictly monotonically with generation length
