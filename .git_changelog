@@ -63,3 +63,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-06-15] fix: resolve edge case where first chunk arrived before timer initialized
 - [2025-07-06] perf: inline percentile calculation using quickselect algorithm
 - [2025-07-28] test: verify quickselect achieves O(N) performance on 1,000,000 token samples
+- [2025-08-19] chore: bump release to v1.0.0 production milestone with hardware profilers
