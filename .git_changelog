@@ -66,3 +66,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-08-19] chore: bump release to v1.0.0 production milestone with hardware profilers
 - [2025-09-09] docs: publish comprehensive LLM latency optimization whitepaper in docs/
 - [2025-10-01] chore: update dependencies and modernize python type hints
+- [2025-10-22] chore: clean up test fixtures and ensure zero lint warnings
