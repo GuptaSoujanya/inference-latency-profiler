@@ -65,3 +65,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-10-08] test: verify ramp-up mode correctly measures saturation inflection point
 - [2025-10-22] docs: document maximum request concurrency before TTFT degradation
 - [2025-11-05] chore: update dependencies and modernize python type hints
+- [2025-11-19] chore: clean up test fixtures and ensure zero lint warnings
