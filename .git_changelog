@@ -67,3 +67,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2025-11-05] chore: update dependencies and modernize python type hints
 - [2025-11-19] chore: clean up test fixtures and ensure zero lint warnings
 - [2025-12-03] chore: stabilize public API exports
+- [2026-01-18] feat: add vLLM chunked prefill and prefix caching latency profiler
