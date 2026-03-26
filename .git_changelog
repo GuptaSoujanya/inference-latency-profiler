@@ -70,3 +70,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2026-01-18] feat: add vLLM chunked prefill and prefix caching latency profiler
 - [2026-02-09] feat: measure TTFT speedup resulting from prefix cache hits (up to 10x)
 - [2026-03-04] test: verify prefix cache hit latency accurately isolated from generation time
+- [2026-03-26] docs: add benchmark study on prefix caching efficiency in multi-turn conversations
