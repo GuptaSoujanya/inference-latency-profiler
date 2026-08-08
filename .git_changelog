@@ -74,3 +74,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2026-04-29] docs: add benchmark study on prefix caching efficiency in multi-turn conversations
 - [2026-06-02] perf: optimize memory overhead of streaming telemetry ring buffers
 - [2026-07-05] fix: ensure compatibility with Python 3.12 and modern async network stacks
+- [2026-08-08] test: verify zero lost packets across 100 concurrent streaming connections
