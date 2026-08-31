@@ -77,3 +77,4 @@ Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
 - [2026-06-24] chore: bump version to v1.3.4 and refresh project documentation
 - [2026-07-17] docs: add full production latency checklist for LLM deployment
 - [2026-08-08] feat: reporters: format latency summaries with high-contrast colorized charts
+- [2026-08-31] test: add regression test validating microsecond clock accuracy across platforms
