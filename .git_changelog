@@ -1,77 +1,30 @@
-# Engineering Changelog: inference-latency-profiler
-
-Inception Date: 2024-05-09
-Author: Soujanya Gupta <158287001+GuptaSoujanya@users.noreply.github.com>
-
-- [2024-05-09] chore: scaffold profiler architecture and configuration schema
-- [2024-05-13] feat: timer: implement high-precision monotonic clock recorder
-- [2024-05-18] feat: timer: add P50, P90, P95, and P99 quantile statistics
-- [2024-05-22] test: add unit tests for percentile calculation on skewed distributions
-- [2024-05-27] feat: collector: implement RequestLatencyRecord and throughput estimator
-- [2024-05-31] feat: backends: add BaseBackend abstract interface
-- [2024-06-05] feat: backends: implement MockStreamingBackend with realistic jitter
-- [2024-06-09] test: verify streaming generator yields expected token chunks
-- [2024-06-14] feat: telemetry: implement process RSS memory tracker
-- [2024-06-18] feat: telemetry: add simulated GPU VRAM allocation telemetry
-- [2024-06-23] feat: viz: add terminal ASCII histogram visualizer for latency distributions
-- [2024-06-27] feat: cli: implement llm-profile command line runner
-- [2024-07-02] test: add end-to-end integration test for latency profiler engine
-- [2024-07-06] ci: configure GitHub Actions automated test workflow
-- [2024-07-11] docs: add sequence diagram decomposing TTFT and ITL windows in README
-- [2024-07-15] perf: optimize microsecond timer array allocation using pre-sized slots
-- [2024-07-20] feat: backends: add OpenAI-compatible streaming endpoint client
-- [2024-07-24] feat: backends: add Ollama /api/generate streaming adaptor
-- [2024-07-29] fix: handle connection timeout gracefully during streaming prefill
-- [2024-08-02] test: mock streaming server responses for integration testing
-- [2024-08-07] feat: viz: add latency CDF plot renderer in ASCII
-- [2024-08-11] perf: reduce timing overhead to under 200 nanoseconds per token probe
-- [2024-08-16] docs: add comparative benchmarks for NVIDIA H100 vs A100 vs RTX 4090
-- [2024-08-20] feat: cli: add concurrent client simulation with worker threads
-- [2024-08-25] fix: prevent race condition in multi-threaded latency metric aggregation
-- [2024-08-29] test: add stress test verifying concurrency accuracy under load
-- [2024-09-03] feat: telemetry: add P99.9 ultra-tail latency quantile tracking
-- [2024-09-07] docs: add Apple Silicon M3 Max llama.cpp metal latency figures
-- [2024-09-12] feat: reporters: add automated latency regression detection vs baseline
-- [2024-09-16] feat: backends: add llama.cpp HTTP server streaming client
-- [2024-09-21] feat: backends: add TensorRT-LLM gRPC streaming connector
-- [2024-09-25] test: verify gRPC streaming client correctly handles token end event
-- [2024-09-30] perf: use zero-copy byte buffers for incoming token telemetry
-- [2024-10-04] docs: add whitepaper on chunked prefill impact on Time-To-First-Token
-- [2024-10-09] feat: cli: add --warmup-requests flag to eliminate cold start bias
-- [2024-10-13] fix: exclude warmup request timings from final quantile calculations
-- [2024-10-18] test: verify warmup filter eliminates outlier first-request latency
-- [2024-10-22] feat: reporters: add CSV export for longitudinal latency regressions
-- [2024-10-27] docs: update README with architecture diagram and live benchmark numbers
-- [2024-10-31] feat: telemetry: track KV cache memory footprint growth per token
-- [2024-11-05] test: verify KV cache allocation increases strictly monotonically with generation length
-- [2024-11-09] fix: guard against socket reset errors during server-side aborts
-- [2024-11-14] feat: reporters: export latency traces in Jaeger / OpenTelemetry span format
-- [2024-11-18] docs: add distributed tracing setup guide for LLM inference gateways
-- [2024-11-23] perf: minimize garbage collection pauses during timing capture windows
-- [2024-11-27] feat: cli: add --concurrency ramp-up test mode for saturation benchmarking
-- [2024-12-02] test: verify ramp-up mode correctly measures saturation inflection point
-- [2024-12-06] docs: document maximum request concurrency before TTFT degradation
-- [2024-12-11] chore: bump version to v0.5.2 and stabilize telemetry schemas
-- [2024-12-15] chore: update pyproject.toml dependencies and lockfile
-- [2025-01-15] feat: implement CUDA event timer integration for zero-CPU-overhead GPU profiling
-- [2025-02-05] feat: measure exact kernel execution latency for flash-attention prefill
-- [2025-02-27] test: verify CUDA event timings match PyTorch profiler within 1% margin
-- [2025-03-20] docs: document GPU kernel latency decomposition (Prefill vs Decode)
-- [2025-04-11] feat: add Apple Silicon Metal Performance Shaders (MPS) latency profiler
-- [2025-05-03] test: verify MPS profiler correctly captures unified memory bandwidth
-- [2025-05-24] docs: add benchmark report: M3 Max unified memory vs NVIDIA H100 SXM5
-- [2025-06-15] fix: resolve edge case where first chunk arrived before timer initialized
-- [2025-07-06] perf: inline percentile calculation using quickselect algorithm
-- [2025-07-28] test: verify quickselect achieves O(N) performance on 1,000,000 token samples
-- [2025-08-19] chore: bump release to v1.0.0 production milestone with hardware profilers
-- [2025-09-09] docs: publish comprehensive LLM latency optimization whitepaper in docs/
-- [2025-10-01] chore: update dependencies and modernize python type hints
-- [2025-10-22] chore: clean up test fixtures and ensure zero lint warnings
-- [2025-11-13] chore: stabilize public API exports
-- [2026-01-18] feat: add vLLM chunked prefill and prefix caching latency profiler
-- [2026-02-20] feat: measure TTFT speedup resulting from prefix cache hits (up to 10x)
-- [2026-03-26] test: verify prefix cache hit latency accurately isolated from generation time
-- [2026-04-29] docs: add benchmark study on prefix caching efficiency in multi-turn conversations
-- [2026-06-02] perf: optimize memory overhead of streaming telemetry ring buffers
-- [2026-07-05] fix: ensure compatibility with Python 3.12 and modern async network stacks
-- [2026-08-08] test: verify zero lost packets across 100 concurrent streaming connections
+[2024-03-26T18:15:34] chore: scaffold: initialize profiler architecture and configuration schema
+[2024-04-03T19:05:33] feat: timer: implement high-precision monotonic clock recorder
+[2024-04-18T14:17:50] feat: timer: add P50, P90, P95, and P99 quantile statistics
+[2024-05-13T15:13:43] test: add unit tests for percentile calculation on skewed distributions
+[2024-07-29T17:08:15] feat: collector: implement RequestLatencyRecord and throughput estimator
+[2024-08-17T17:35:14] feat: backends: add BaseBackend abstract interface
+[2024-11-14T19:20:26] feat: backends: implement MockStreamingBackend with realistic jitter
+[2024-11-15T19:32:28] test: verify streaming generator yields expected token chunks
+[2024-12-04T15:07:24] feat: telemetry: implement process RSS memory tracker
+[2025-03-17T12:13:23] feat: telemetry: add simulated GPU VRAM allocation telemetry
+[2025-03-25T16:24:11] feat: viz: add terminal ASCII histogram visualizer for latency distributions
+[2025-04-24T12:39:49] feat: cli: implement llm-profile command line runner
+[2025-05-24T11:52:26] test: add end-to-end integration test for latency profiler engine
+[2025-06-16T19:39:28] ci: configure GitHub Actions automated test workflow
+[2025-08-25T12:38:41] docs: add sequence diagram decomposing TTFT and ITL windows
+[2025-09-17T16:26:50] perf: optimize microsecond timer array allocation using pre-sized slots
+[2025-11-24T10:25:05] feat: backends: add OpenAI-compatible streaming endpoint client
+[2025-11-24T20:46:19] feat: backends: add Ollama /api/generate streaming adaptor
+[2025-12-01T14:25:19] fix: handle connection timeout gracefully during streaming prefill
+[2025-12-19T14:45:41] test: mock streaming server responses for integration testing
+[2026-04-04T20:25:46] feat: viz: add latency CDF plot renderer in ASCII
+[2026-04-06T18:37:34] perf: reduce timing overhead to under 200 nanoseconds per token probe
+[2026-04-10T12:11:51] docs: add comparative benchmarks for NVIDIA H100 vs A100 vs RTX 4090
+[2026-06-29T11:39:12] feat: cli: add concurrent client simulation with worker threads
+[2026-07-29T15:54:47] fix: prevent race condition in multi-threaded latency metric aggregation
+[2026-08-03T10:09:49] test: add stress test verifying concurrency accuracy under load
+[2026-08-04T10:52:12] feat: telemetry: add P99.9 ultra-tail latency quantile tracking
+[2026-09-07T16:38:16] docs: add Apple Silicon M3 Max llama.cpp metal latency figures
+[2026-09-16T20:25:30] feat: reporters: add automated latency regression detection vs baseline
+[2026-10-08T18:38:41] chore: bump version to v0.2.8 and stabilize telemetry exports
