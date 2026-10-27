@@ -71,3 +71,5 @@ python -m profiler.cli --tokens 32
 ## License
 
 MIT License (c) 2024 Soujanya Gupta.
+
+<!-- PR #2: docs: clarify benchmark metric configuration options -->
