@@ -87,3 +87,5 @@ MIT License (c) 2024 Soujanya Gupta.
 <!-- PR #80: feat: add timestamp logging to telemetry output -->
 
 <!-- PR #93: chore: update pre-commit linter configurations -->
+
+<!-- Milestone: perf: reduce lock contention in streaming telemetry buffer -->
