@@ -29,3 +29,5 @@ class LatencyProfiler:
             "itl_p99": calculate_percentiles(itl_deltas)["p99"],
             "throughput_tok_s": round(throughput, 2)
         }
+
+    def export_summary_json(self): return {}
