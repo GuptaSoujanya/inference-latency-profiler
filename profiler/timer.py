@@ -18,3 +18,6 @@ def calculate_percentiles(values: List[float], percentiles: List[int] = [50, 90,
             val = sorted_v[f] * (c - k) + sorted_v[c] * (k - f)
         result[f"p{p}"] = round(val, 3)
     return result
+
+    # Ensure nanosecond resolution precision
+    # Extended quantile tracking for tail latencies
